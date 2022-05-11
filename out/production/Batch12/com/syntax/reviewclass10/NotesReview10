@@ -1,0 +1,67 @@
+Inheritance in Java:
+   This is mechanism in java through which one class can acquire the properties
+   and methods from another class.
+   The class from which we acquire the properties is called parent/superclass/baseclass
+   and the class which acquire the properties and methods is called
+   child class/ derived class/ subclass
+Advantages:
+    1) Code duplication is reduced.
+    2) Saves Memory
+    3) Execution time is less
+Disadvantages:
+    Classes get tightly coupled. If we change some in the parent it will affect all the
+    children classes and we have to make sure that this new change is compatible with the
+    that we have in the children classes.
+When we should use Inheritance:
+if there is a case in which we would have to use the same methods in many classes
+ and classes are closely related to each different classes
+the best practice would be to create a parent class and use it to extend the methods
+into the subclasses
+
+Types of Inheritance:
+we have 4 types inheritance --> single / hierarchical / multilevel / multiple
+
+1) Single Inheritance:
+in single inheritance we have only one parent and only one child class
+class Animal{
+}
+class Dog extends Animal{
+}
+
+2) Hierarchical Inheritance:
+we have only one parent class and multiple children classes
+class Animal{
+}
+class Dog extends Animal{
+}
+class Cat extends Animal{
+}
+
+3) Multilevel Inheritance:
+If we have one parent and one child class and many intermediate classes it's called multilevel
+class Human{
+}
+class Employee extends Human{
+}
+class Teacher extends Employee{
+}
+
+4) Multiple Inheritance:
+in Multiple Inheritance we have a single child class and multiple parent classes: This
+is not supported in Java with classes but possible with the help of interfaces.
+class Display{
+int resolution;
+}
+class Keyboard{
+int noOfKeys
+}
+class Laptop extends Display,Keyboard{
+}
+
+Rules:
+    1) Private members are not inherited (private fields and private methods)
+    2) Constructors don't participate in inheritance
+    3) if we have constructor in the parent class we must have a matching constructor
+    in the children classes as well
+    4) in Java a subclass can only extends single parent class
+

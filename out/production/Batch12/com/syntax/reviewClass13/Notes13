@@ -1,0 +1,11 @@
+Lists should be used when we have to store single elements as a collection.
+    1) They maintain the insertion order.
+    2) They allow us to store duplicate elements
+    3) They are dynamic in size
+Two famous classes that implement the List interface are
+    1) ArrayList
+    2) LinkedList
+ArrayList
+        1) When most of the operations are storing new data at the end of the list
+      and reading data no manipulation of data
+        2)
